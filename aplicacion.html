@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<meta charset="utf-8">  
+<title>jQuery Mobile Ejemplo 1</title>  
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>  
+</head>  
+<body>
+    <!-- PAGINA LOGIN -->
+    <div data-role ="page"> 
+        <div data-role ="header">
+            <h1>Login</h1>
+        </div> 
+        <div data-role ="content">
+            <form action="pag2" method="POST">
+                <div data-role="fieldcontain">
+                    <label for="nombre">Usuario</label>
+                    <input type="text" id="nombre" name="nombre" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="pass">Password</label>
+                    <input type="text" id="pass" name="pass" />
+                </div>
+                <a data-role="button" href="#pag2" data-icon="check">Enviar</a>
+            </form>
+        </div> 
+        <div data-role ="footer">
+            <h1>Aplicacion Mobile</h1>
+        </div> 
+    </div> 
+
+    <!-- PAGINA LOGIN -->
+    <div data-role ="page" id="pag2"> 
+        <div data-role ="header">
+            <h1>Logueado</h1>
+        </div> 
+        <div data-role ="content">
+            <h1>Has accedido</h1>
+        </div> 
+        <div data-role ="footer">
+            <h1>Aplicacion Mobile</h1>
+        </div> 
+    </div>  
+</body>  
+</html> 
