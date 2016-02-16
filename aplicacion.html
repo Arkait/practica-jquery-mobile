@@ -41,16 +41,72 @@
             <p>Bienvenido a Califica Proyectos Mobile.</p>
             <p>Esta aplicación, nos permitirá calificar los proyectos de fin de curso de los alumnos de formacion profesional.</p>
             <p>Además, podremos ver el listado de items a valorar en la expresion oral del proyecto.</p>
-            <a data-role="button" href="#oral" data-icon="info">¿Qué valorar en la expresion oral?</a>
-            <a data-role="button" href="#" data-icon="bars">Calificar Alumno</a>
+            <a data-role="button" href="#guia" data-icon="info">Guía de calificación oral</a>
+            <a data-role="button" href="#" data-icon="edit">Calificar Alumno</a>
         </div> 
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
+    </div>
+
+    <!-- PAGINA SOBRE GUIA DE CALIFICACION ORAL  -->
+    <div data-role ="page" id="guia"> 
+        <div data-role ="header">
+            <h1>Guia de calificación oral</h1>
+        </div> 
+        <div data-role ="content">
+            <p></p>
+            <a data-role="button" href="#proyecto" data-icon="bars">Contenido del proyecto</a>
+            <a data-role="button" href="#presentacion" data-icon="bars">Calidad de presentacion</a>
+            <a data-role="button" href="#oral" data-icon="bars">Expresion oral</a>
+        </div> 
+        <div data-role ="footer">
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div> 
     </div> 
 
-    <!-- PAGINA VALORACIONES ORAL -->
+    <!-- PAGINA CONTENIDO DEL PROYECTO -->
+    <div data-role ="page" id="proyecto"> 
+        <div data-role ="header">
+            <h1>Listado de items a valorar en el contenido del proyecto</h1>
+        </div> 
+        <div data-role ="content">
+            <h2>CONTENIDO DEL PROYECTO (Máximo 6,5 ptos. Representa el 65%)</h2>
+            <p>Planteamiento (Objetivos, Recursos utilizados, Destinatarios, Justificación del proyecto)</p>
+            <p>Contenido (Metodología seguida, Claridad, Actividades o acciones realizadas, Documentación elaborada)</p>
+            <p>Resultados obtenidos (Conclusiones, Objetivos conseguidos y grado de consecución)</p>
+        </div> 
+        <div data-role ="footer">
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <a id="home" data-role="button" href="#guia" data-icon="forward">Volver</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div> 
+    </div> 
+
+    <!-- PAGINA CALIDAD DE PRESENTACION -->
+    <div data-role ="page" id="presentacion"> 
+        <div data-role ="header">
+            <h1>Listado de items a valorar en el contenido del proyecto</h1>
+        </div> 
+        <div data-role ="content">
+            <h2>CALIDAD DE PRESENTACION (Máx. 1 pto. Representa el 10 %)</h2>
+            <p>Presentación escrita.</p>
+            <p>Redacción y claridad del texto</p>
+            <p>Organización del contenido</p>
+        </div> 
+        <div data-role ="footer">
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <a id="home" data-role="button" href="#guia" data-icon="forward">Volver</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div> 
+    </div> 
+
+    <!-- PAGINA EXPRESIÓN ORAL -->
     <div data-role ="page" id="oral"> 
         <div data-role ="header">
             <h1>Listado de items a valorar en la expresion oral</h1>
@@ -72,10 +128,19 @@
             <blockquote>Vacilación en la voz</blockquote>
             <blockquote>Pausas</blockquote>
             <blockquote>Utilización de muletillas</blockquote>
+            <p>Duración: ¿Se adecua a lo estipulado?</p>
+            <p>Lenguaje no verbal:</p>
+            <blockquote>Mirada: ¿dirige la mirada a todo el auditorio?</blockquote>
+            <blockquote>Sonrisa/expresión facial positiva</blockquote>
+            <blockquote>Posición correcta del cuerpo</blockquote>
+            <blockquote>Tics, gestos nerviosos</blockquote>
+            <p>*Atención del público: * ¿Logra atraer la atención del público?</p>
+            <p>Preguntas realizadas: ¿Responde de forma coherente?</p>
         </div> 
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <a id="home" data-role="button" href="#guia" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div> 
