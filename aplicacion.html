@@ -4,12 +4,13 @@
 <meta charset="utf-8">  
 <title>jQuery Mobile Ejemplo 1</title>  
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<link rel="stylesheet" href="estilo.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>  
 </head>  
 <body>
     <!-- PAGINA LOGIN -->
-    <div data-role ="page"> 
+    <div data-role ="page" id="login"> 
         <div data-role ="header">
             <h1>Login</h1>
         </div> 
@@ -23,25 +24,60 @@
                     <label for="pass">Password</label>
                     <input type="text" id="pass" name="pass" />
                 </div>
-                <a data-role="button" href="#pag2" data-icon="check">Enviar</a>
+                <a data-role="button" href="#home" data-icon="check">Enviar</a>
             </form>
         </div> 
         <div data-role ="footer">
-            <h1>Aplicacion Mobile</h1>
+            <h1>Califica Proyectos Mobile</h1>
         </div> 
     </div> 
 
-    <!-- PAGINA LOGIN -->
-    <div data-role ="page" id="pag2"> 
+    <!-- PAGINA INDEX -->
+    <div data-role ="page" id="home"> 
         <div data-role ="header">
-            <h1>Logueado</h1>
+            <h1>Inicio</h1>
         </div> 
         <div data-role ="content">
-            <h1>Has accedido</h1>
+            <p>Bienvenido a Califica Proyectos Mobile.</p>
+            <p>Esta aplicación, nos permitirá calificar los proyectos de fin de curso de los alumnos de formacion profesional.</p>
+            <p>Además, podremos ver el listado de items a valorar en la expresion oral del proyecto.</p>
+            <a data-role="button" href="#oral" data-icon="info">¿Qué valorar en la expresion oral?</a>
+            <a data-role="button" href="#" data-icon="bars">Calificar Alumno</a>
         </div> 
         <div data-role ="footer">
-            <h1>Aplicacion Mobile</h1>
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
-    </div>  
+    </div> 
+
+    <!-- PAGINA VALORACIONES ORAL -->
+    <div data-role ="page" id="oral"> 
+        <div data-role ="header">
+            <h1>Listado de items a valorar en la expresion oral</h1>
+        </div> 
+        <div data-role ="content">
+            <h2>EXPRESIÓN ORAL (Máximo 2,5 ptos. Representa el 25%)</h2>
+            <h3>Aspectos a valorar en la expresión oral:</h3>
+            <p>Entrada del alumno</p>
+            <p>Indumentaria</p>
+            <p>Introducción: ¿Es atractiva? ¿Queda claro el proyecto?</p>
+            <p>Desarrollo: Orden en las ideas. Claridad en la exposición. Aclaración de términos técnicos</p>
+            <p>Conclusión: ¿Queda claro el objetivo del proyecto? ¿Lo vende bien?</p>
+            <p>Seguridad en lo que expone. La presentación está trabajada (power -point otros)</p>
+            <p>Entusiasmo en lo que expone</p>
+            <p>Expresión oral:</p>
+            <blockquote>Entonación</blockquote>
+            <blockquote>Volumen</blockquote>
+            <blockquote>Velocidad</blockquote>
+            <blockquote>Vacilación en la voz</blockquote>
+            <blockquote>Pausas</blockquote>
+            <blockquote>Utilización de muletillas</blockquote>
+        </div> 
+        <div data-role ="footer">
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div> 
+    </div> 
 </body>  
 </html> 
