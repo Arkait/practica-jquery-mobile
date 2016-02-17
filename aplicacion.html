@@ -42,7 +42,7 @@
             <p>Esta aplicación, nos permitirá calificar los proyectos de fin de curso de los alumnos de formacion profesional.</p>
             <p>Además, podremos ver el listado de items a valorar en la expresion oral del proyecto.</p>
             <a data-role="button" href="#guia" data-icon="info">Guía de calificación oral</a>
-            <a data-role="button" href="#" data-icon="edit">Calificar Alumno</a>
+            <a data-role="button" href="#formulario" data-icon="edit">Calificar Alumno</a>
         </div> 
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
@@ -144,5 +144,98 @@
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div> 
+
+    <!-- PAGINA FORMULARIO -->
+    <div data-role ="page" id="formulario"> 
+        <div data-role ="header">
+            <div data-role="controlgroup" data-type="horizontal" id="menus"> 
+                <a id="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
+                <a id="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
+                <a id="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
+            </div>            
+        </div> 
+        <div data-role ="content">
+            <div data-role="fieldcontain">
+                    <label for="planteamiento">Planteamiento</label>
+                    <input type="text" id="planteamiento" name="planteamiento" />
+            </div>
+            <div data-role="fieldcontain">
+                    <label for="contenido">Contenido</label>
+                    <input type="text" id="contenido" name="contenido" />
+            </div>
+            <div data-role="fieldcontain">
+                    <label for="resultados">Resultados obtenidos</label>
+                    <input type="text" id="resultados" name="resultados" />
+            </div>
+            <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
+        </div> 
+        <div data-role ="footer">
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div>
+    </div>
+
+    <!-- PAGINA FORMULARIO - CALIDAD DE PRESENTACION -->
+    <div data-role ="page" id="calidad"> 
+        <div data-role ="header">
+            <div data-role="controlgroup" data-type="horizontal" id="menus"> 
+                <a id="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
+                <a id="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
+                <a id="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
+            </div>            
+        </div> 
+        <div data-role ="content">
+            <div data-role="fieldcontain">
+                    <label for="presentacion">Presentación escrita</label>
+                    <input type="text" id="presentacion" name="presentacion" />
+            </div>
+            <div data-role="fieldcontain">
+                    <label for="texto">Redacción y claridad del texto</label>
+                    <input type="text" id="texto" name="texto" />
+            </div>
+            <div data-role="fieldcontain">
+                    <label for="organizacion">Organización del contenido</label>
+                    <input type="text" id="organizacion" name="organizacion" />
+            </div>
+            <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
+        </div> 
+        <div data-role ="footer">
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div> 
+    </div>
+
+    <!-- PAGINA FORMULARIO - EXPRESION ORAL -->
+    <div data-role ="page" id="expresionO"> 
+        <div data-role ="header">
+            <div data-role="controlgroup" data-type="horizontal" id="menus"> 
+                <a id="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
+                <a id="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
+                <a id="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
+            </div>            
+        </div> 
+        <div data-role ="content">
+            <div data-role="fieldcontain">
+                    <label for="presentacion">Presentación escrita</label>
+                    <input type="text" id="presentacion" name="presentacion" />
+            </div>
+            <div data-role="fieldcontain">
+                    <label for="texto">Redacción y claridad del texto</label>
+                    <input type="text" id="texto" name="texto" />
+            </div>
+            <div data-role="fieldcontain">
+                    <label for="organizacion">Organización del contenido</label>
+                    <input type="text" id="organizacion" name="organizacion" />
+            </div>
+            <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
+        </div> 
+        <div data-role ="footer">
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div> 
+    </div>
 </body>  
 </html> 
