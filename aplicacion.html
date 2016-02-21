@@ -42,7 +42,7 @@
             <p>Esta aplicación, nos permitirá calificar los proyectos de fin de curso de los alumnos de formacion profesional.</p>
             <p>Además, podremos ver el listado de items a valorar en la expresion oral del proyecto.</p>
             <a data-role="button" href="#guia" data-icon="info">Guía de calificación oral</a>
-            <a data-role="button" href="#formulario" data-icon="edit">Calificar Alumno</a>
+            <a data-role="button" href="#alumno" data-icon="edit">Calificar Alumno</a>
         </div> 
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
@@ -145,6 +145,39 @@
         </div> 
     </div> 
 
+    <!-- PAGINA PARA SELECCIONAR AL ALUMNO A CALIFICAR -->
+    <div data-role ="page" id="alumno"> 
+        <div data-role ="header">
+            <h1>Selecciona al alumno a calificar</h1>
+        </div> 
+        <div data-role ="content">
+            <div data-role="fieldcontain">
+                <label for="curso" class="select">Selecciona el curso:</label>
+                <select name="curso" id="curso">
+                    <option value="DAM">DAM</option>
+                    <option value="DAW">DAW</option>
+                    <option value="ASIR">ASIR</option>
+                </select>
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="alumno" class="select">Selecciona el alumno:</label>
+                <select name="alumno" id="alumno">
+                    <option value="Arkaitz">Arkaitz Huerta</option>
+                    <option value="Marcos">Marcos Lopez</option>
+                    <option value="Alba">Alba Martinez</option>
+                    <option value="Ivan">Ivan Martinez</option>
+                </select>
+            </div>
+            <a data-role="button" href="#formulario" data-icon="check">Calificar</a>
+        </div> 
+        <div data-role ="footer">
+            <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
+            <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div> 
+    </div> 
+    
     <!-- PAGINA FORMULARIO -->
     <div data-role ="page" id="formulario"> 
         <div data-role ="header">
@@ -155,23 +188,58 @@
             </div>            
         </div> 
         <div data-role ="content">
-            <div data-role="fieldcontain">
+            <div class="contenedor" data-role="fieldcontain">
                     <label for="planteamiento">Planteamiento</label>
-                    <input type="text" id="planteamiento" name="planteamiento" />
+                    <div class="ec-stars-wrapper">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                        <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                        <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                        <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                        <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                    </div>
             </div>
-            <div data-role="fieldcontain">
+            <div class="contenedor" data-role="fieldcontain">
                     <label for="contenido">Contenido</label>
-                    <input type="text" id="contenido" name="contenido" />
+                    <div class="ec-stars-wrapper">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                        <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                        <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                        <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                        <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                    </div>
             </div>
-            <div data-role="fieldcontain">
+            <div class="contenedor" data-role="fieldcontain">
                     <label for="resultados">Resultados obtenidos</label>
-                    <input type="text" id="resultados" name="resultados" />
+                    <div class="ec-stars-wrapper">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                        <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                        <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                        <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                        <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                    </div>
             </div>
+            <br>
             <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
         </div> 
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <a id="home" data-role="button" href="#alumno" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div>
     </div>
@@ -186,23 +254,57 @@
             </div>            
         </div> 
         <div data-role ="content">
-            <div data-role="fieldcontain">
+            <div class="contenedor" data-role="fieldcontain">
                     <label for="presentacion">Presentación escrita</label>
-                    <input type="text" id="presentacion" name="presentacion" />
+                    <div class="ec-stars-wrapper">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                        <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                        <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                        <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                        <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                    </div>
             </div>
-            <div data-role="fieldcontain">
+            <div class="contenedor" data-role="fieldcontain">
                     <label for="texto">Redacción y claridad del texto</label>
-                    <input type="text" id="texto" name="texto" />
+                    <div class="ec-stars-wrapper">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                        <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                        <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                        <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                        <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                    </div>
             </div>
-            <div data-role="fieldcontain">
+            <div class="contenedor" data-role="fieldcontain">
                     <label for="organizacion">Organización del contenido</label>
-                    <input type="text" id="organizacion" name="organizacion" />
+                    <div class="ec-stars-wrapper">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                        <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                        <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                        <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                        <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                    </div>
             </div>
             <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
         </div> 
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <a id="home" data-role="button" href="#alumno" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div>
@@ -217,23 +319,239 @@
             </div>            
         </div> 
         <div data-role ="content">
-            <div data-role="fieldcontain">
-                    <label for="presentacion">Presentación escrita</label>
-                    <input type="text" id="presentacion" name="presentacion" />
-            </div>
-            <div data-role="fieldcontain">
-                    <label for="texto">Redacción y claridad del texto</label>
-                    <input type="text" id="texto" name="texto" />
-            </div>
-            <div data-role="fieldcontain">
-                    <label for="organizacion">Organización del contenido</label>
-                    <input type="text" id="organizacion" name="organizacion" />
-            </div>
-            <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
-        </div> 
+            <form>
+                <h3>Entrada del alumno</h3>
+                    <label>
+                        <input type="radio" name="entrada" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="entrada" id="noApto" class="custom">
+                    </label>
+                <h3>Indumentaria</h3>
+                    <label>
+                        <input type="radio" name="indumentaria" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="indumentaria" id="noApto" class="custom">
+                    </label>
+                <h3>Introducción: ¿Es atractiva? ¿Queda claro el proyecto?</h3>
+                    <label>
+                        <input type="radio" name="introduccion" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="introduccion" id="noApto" class="custom">
+                    </label>
+                <h3>Desarrollo: Orden en las ideas. Claridad en la exposición. Aclaración de términos técnicos</h3>
+                    <label>
+                        <input type="radio" name="desarrollo" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="desarrollo" id="noApto" class="custom">
+                    </label>
+                <h3>Conclusión: ¿Queda claro el objetivo del proyecto? ¿Lo vende bien?</h3>
+                    <label>
+                        <input type="radio" name="conclusion" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="conclusion" id="noApto" class="custom">
+                    </label>
+                <h3>Seguridad en lo que expone. La presentación está trabajada (power -point otros)</h3>
+                    <label>
+                        <input type="radio" name="seguridad" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="seguridad" id="noApto" class="custom">
+                    </label>
+                <h3>Entusiasmo en lo que expone</h3>
+                    <label>
+                        <input type="radio" name="entusiasmo" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="entusiasmo" id="noApto" class="custom">
+                    </label>
+
+                    <h3>Expresión oral:</h3>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Entonación</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Volumen</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Velocidad</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Vacilación en la voz</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Pausas</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Utilización de muletillas</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+
+                    <h3>Duración: ¿Se adecua a lo estipulado?</h3>
+                    <label>
+                        <input type="radio" name="duracion" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="duracion" id="noApto" class="custom">
+                    </label>
+
+                    <h3>Lenguaje no verbal:</h3>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Mirada: ¿dirige la mirada a todo el auditorio?</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Sonrisa/expresión facial positiva</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Posición correcta del cuerpo</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="contenedor" data-role="fieldcontain">
+                        <label for="presentacion">Tics, gestos nerviosos</label>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                            <a href="#" data-value="6" title="Votar con 6 estrellas">&#9733;</a>
+                            <a href="#" data-value="7" title="Votar con 7 estrellas">&#9733;</a>
+                            <a href="#" data-value="8" title="Votar con 8 estrellas">&#9733;</a>
+                            <a href="#" data-value="9" title="Votar con 9 estrellas">&#9733;</a>
+                            <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+
+                    <h3>*Atención del público: * ¿Logra atraer la atención del público?</h3>
+                    <label>
+                        <input type="radio" name="atencion" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="atencion" id="noApto" class="custom">
+                    </label>
+                    <h3>Preguntas realizadas: ¿Responde de forma coherente?</h3>
+                    <label>
+                        <input type="radio" name="preguntas" id="apto">Apto
+                    </label>
+                    <label for="radio-choice-0b">No Apto
+                        <input type="radio" name="preguntas" id="noApto" class="custom">
+                    </label>
+                    <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
+            </form>
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
+            <a id="home" data-role="button" href="#alumno" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div>

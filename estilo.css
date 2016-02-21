@@ -3,3 +3,34 @@
 	bottom: 28px;
 	margin-bottom: -10px;
 }
+
+.ec-stars-wrapper {
+	font-size: 0;
+	display: inline-block;
+	float: right;
+	/*margin-left: 170px;*/
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+	
+	color: #888 !important;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228) !important;
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888 !important;
+}
+
+.contenedor {
+	line-height: 30px;
+	/*width: 500px;*/
+}
