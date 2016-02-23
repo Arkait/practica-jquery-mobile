@@ -2,6 +2,7 @@
 <html>  
 <head>  
 <meta charset="utf-8">  
+<meta name="viewport">
 <title>jQuery Mobile Ejemplo 1</title>  
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
 <link rel="stylesheet" href="estilo.css" />
@@ -24,11 +25,11 @@
                     <label for="pass">Password</label>
                     <input type="text" id="pass" name="pass" />
                 </div>
-                <a data-role="button" href="#home" data-icon="check">Enviar</a>
+                <a data-role="button" id="acceder" href="#home" data-icon="check">Enviar</a>
             </form>
         </div> 
         <div data-role ="footer">
-            <h1>Califica Proyectos Mobile</h1>
+            <h1 id="buttonLogin">Califica Proyectos Mobile</h1>
         </div> 
     </div> 
 
@@ -82,7 +83,7 @@
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
-            <a id="home" data-role="button" href="#guia" data-icon="forward">Volver</a>
+            <a id="volver" data-role="button" href="#guia" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div> 
@@ -101,7 +102,7 @@
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
-            <a id="home" data-role="button" href="#guia" data-icon="forward">Volver</a>
+            <a id="volver" data-role="button" href="#guia" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div> 
@@ -140,7 +141,7 @@
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
-            <a id="home" data-role="button" href="#guia" data-icon="forward">Volver</a>
+            <a id="volver" data-role="button" href="#guia" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div> 
@@ -181,10 +182,10 @@
     <!-- PAGINA FORMULARIO -->
     <div data-role ="page" id="formulario"> 
         <div data-role ="header">
-            <div data-role="controlgroup" data-type="horizontal" id="menus"> 
-                <a id="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
-                <a id="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
-                <a id="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
+            <div data-role="controlgroup" data-type="horizontal" class="menus"> 
+                <a class="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
+                <a class="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
+                <a class="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
             </div>            
         </div> 
         <div data-role ="content">
@@ -234,12 +235,12 @@
                     </div>
             </div>
             <br>
-            <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
+            <a data-role="button" href="#resumen" data-icon="check">Enviar Formulario</a>
         </div> 
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
-            <a id="home" data-role="button" href="#alumno" data-icon="forward">Volver</a>
+            <a id="volver" data-role="button" href="#alumno" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div>
     </div>
@@ -247,10 +248,10 @@
     <!-- PAGINA FORMULARIO - CALIDAD DE PRESENTACION -->
     <div data-role ="page" id="calidad"> 
         <div data-role ="header">
-            <div data-role="controlgroup" data-type="horizontal" id="menus"> 
-                <a id="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
-                <a id="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
-                <a id="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
+            <div data-role="controlgroup" data-type="horizontal" class="menus"> 
+                <a class="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
+                <a class="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
+                <a class="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
             </div>            
         </div> 
         <div data-role ="content">
@@ -299,12 +300,12 @@
                         <a href="#" data-value="10" title="Votar con 10 estrellas">&#9733;</a>
                     </div>
             </div>
-            <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
+            <a data-role="button" href="#resumen" data-icon="check">Enviar Formulario</a>
         </div> 
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
-            <a id="home" data-role="button" href="#alumno" data-icon="forward">Volver</a>
+            <a id="volver" data-role="button" href="#alumno" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div>
@@ -312,62 +313,62 @@
     <!-- PAGINA FORMULARIO - EXPRESION ORAL -->
     <div data-role ="page" id="expresionO"> 
         <div data-role ="header">
-            <div data-role="controlgroup" data-type="horizontal" id="menus"> 
-                <a id="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
-                <a id="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
-                <a id="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
+            <div data-role="controlgroup" data-type="horizontal" class="menus"> 
+                <a class="contenido" data-role="button" href="#formulario" data-icon="star">Contenido del Proyecto</a>
+                <a class="calidad" data-role="button" href="#calidad" data-icon="star">Calidad de presentacion</a>
+                <a class="oral" data-role="button" href="#expresionO" data-icon="star">Expresion oral</a>
             </div>            
         </div> 
         <div data-role ="content">
             <form>
                 <h3>Entrada del alumno</h3>
                     <label>
-                        <input type="radio" name="entrada" id="apto">Apto
+                        <input type="radio" name="entrada" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="entrada" id="noApto" class="custom">
+                        <input type="radio" name="entrada" class="noApto" class="custom">
                     </label>
                 <h3>Indumentaria</h3>
                     <label>
-                        <input type="radio" name="indumentaria" id="apto">Apto
+                        <input type="radio" name="indumentaria" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="indumentaria" id="noApto" class="custom">
+                        <input type="radio" name="indumentaria" class="noApto" class="custom">
                     </label>
                 <h3>Introducción: ¿Es atractiva? ¿Queda claro el proyecto?</h3>
                     <label>
-                        <input type="radio" name="introduccion" id="apto">Apto
+                        <input type="radio" name="introduccion" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="introduccion" id="noApto" class="custom">
+                        <input type="radio" name="introduccion" class="noApto" class="custom">
                     </label>
                 <h3>Desarrollo: Orden en las ideas. Claridad en la exposición. Aclaración de términos técnicos</h3>
                     <label>
-                        <input type="radio" name="desarrollo" id="apto">Apto
+                        <input type="radio" name="desarrollo" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="desarrollo" id="noApto" class="custom">
+                        <input type="radio" name="desarrollo" class="noApto" class="custom">
                     </label>
                 <h3>Conclusión: ¿Queda claro el objetivo del proyecto? ¿Lo vende bien?</h3>
                     <label>
-                        <input type="radio" name="conclusion" id="apto">Apto
+                        <input type="radio" name="conclusion" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="conclusion" id="noApto" class="custom">
+                        <input type="radio" name="conclusion" class="noApto" class="custom">
                     </label>
                 <h3>Seguridad en lo que expone. La presentación está trabajada (power -point otros)</h3>
                     <label>
-                        <input type="radio" name="seguridad" id="apto">Apto
+                        <input type="radio" name="seguridad" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="seguridad" id="noApto" class="custom">
+                        <input type="radio" name="seguridad" class="noApto" class="custom">
                     </label>
                 <h3>Entusiasmo en lo que expone</h3>
                     <label>
-                        <input type="radio" name="entusiasmo" id="apto">Apto
+                        <input type="radio" name="entusiasmo" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="entusiasmo" id="noApto" class="custom">
+                        <input type="radio" name="entusiasmo" class="noApto" class="custom">
                     </label>
 
                     <h3>Expresión oral:</h3>
@@ -464,10 +465,10 @@
 
                     <h3>Duración: ¿Se adecua a lo estipulado?</h3>
                     <label>
-                        <input type="radio" name="duracion" id="apto">Apto
+                        <input type="radio" name="duracion" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="duracion" id="noApto" class="custom">
+                        <input type="radio" name="duracion" class="noApto" class="custom">
                     </label>
 
                     <h3>Lenguaje no verbal:</h3>
@@ -534,25 +535,60 @@
 
                     <h3>*Atención del público: * ¿Logra atraer la atención del público?</h3>
                     <label>
-                        <input type="radio" name="atencion" id="apto">Apto
+                        <input type="radio" name="atencion" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="atencion" id="noApto" class="custom">
+                        <input type="radio" name="atencion" class="noApto" class="custom">
                     </label>
                     <h3>Preguntas realizadas: ¿Responde de forma coherente?</h3>
                     <label>
-                        <input type="radio" name="preguntas" id="apto">Apto
+                        <input type="radio" name="preguntas" class="apto">Apto
                     </label>
                     <label for="radio-choice-0b">No Apto
-                        <input type="radio" name="preguntas" id="noApto" class="custom">
+                        <input type="radio" name="preguntas" class="noApto" class="custom">
                     </label>
-                    <a data-role="button" href="#home" data-icon="check">Enviar Formulario</a>
+                    <a data-role="button" href="#resumen" data-icon="check">Enviar Formulario</a>
             </form>
         <div data-role ="footer">
             <a id="sesion" data-role="button" href="#login" data-icon="delete">Cerrar Sesion</a>
             <a id="home" data-role="button" href="#home" data-icon="home">Home</a>
-            <a id="home" data-role="button" href="#alumno" data-icon="forward">Volver</a>
+            <a id="volver" data-role="button" href="#alumno" data-icon="forward">Volver</a>
             <h1 id="pie">Califica Proyectos Mobile</h1>
+        </div> 
+    </div>
+
+    <!-- RESUMEN DE EVALUACION DEL ALUMNO -->
+    <div data-role="page" id="resumen"> 
+        <div data-role="header">
+            <h1>Calificacion del Alumno</h1>
+        </div> 
+        <div data-role="content">
+            <form action="" method="POST">
+                <div data-role="fieldcontain">
+                    <label for="alumno">Alumno</label>
+                    <input type="text" id="alumnoCali" name="alumnoCali" value="Arkaitz Huerta" />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="contenido">Contenido del proyecto - 65%</label>
+                    <input type="text" id="contProy" name="contProy" value="7"/>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="calidad">CALIDAD DE PRESENTACION - 10%</label>
+                    <input type="text" id="CalPres" name="CalPres" value="5"/>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="expresion">EXPRESIÓN ORAL - 25%</label>
+                    <input type="text" id="ExpOral" name="ExpOral" value="5"/>
+                </div>
+                <a data-role="button" href="#home" data-icon="check">Confirmar</a>
+                <a data-role="button" href="#alumno" data-icon="check">Cancelar</a>
+            </form>
+        </div> 
+        <div data-role="footer">
+            <h1>Califica Proyectos Mobile</h1>
         </div> 
     </div>
 </body>  
