@@ -309,6 +309,44 @@
             <h1 id="pie">Califica Proyectos Mobile</h1>
         </div> 
     </div>
+    <!-- RESUMEN DE EVALUACION DEL ALUMNO -->
+    <div data-role="page" id="resumen"> 
+        <div data-role="header">
+            <h1>Calificacion del Alumno</h1>
+        </div> 
+        <div data-role="content">
+            <form action="" method="POST">
+                <div data-role="fieldcontain">
+                    <label for="alumno">Alumno</label>
+                    <input type="text" class="datosResumen" id="alumnoCali" name="alumnoCali" value="Arkaitz Huerta" />
+                </div>
+                <br>
+
+                <div data-role="fieldcontain">
+                    <label for="contenido">Contenido del proyecto - 65%</label>
+                    <input type="text" class="datosResumen" id="contProy" name="contProy" value="7"/>
+                </div>
+                <br>
+
+                <div data-role="fieldcontain">
+                    <label for="calidad">CALIDAD DE PRESENTACION - 10%</label>
+                    <input type="text" class="datosResumen" id="CalPres" name="CalPres" value="5"/>
+                </div>
+                <br>
+
+                <div data-role="fieldcontain">
+                    <label for="expresion">EXPRESIÓN ORAL - 25%</label>
+                    <input type="text" class="datosResumen" id="ExpOral" name="ExpOral" value="5"/>
+                </div>
+                <br>
+                <a data-role="button" href="#home" data-icon="check">Confirmar</a>
+                <a data-role="button" href="#alumno" data-icon="check">Cancelar</a>
+            </form>
+        </div> 
+        <div data-role="footer">
+            <h1 id="resumenFoot">Califica Proyectos Mobile</h1>
+        </div> 
+    </div>
 
     <!-- PAGINA FORMULARIO - EXPRESION ORAL -->
     <div data-role ="page" id="expresionO"> 
@@ -557,39 +595,5 @@
         </div> 
     </div>
 
-    <!-- RESUMEN DE EVALUACION DEL ALUMNO -->
-    <div data-role="page" id="resumen"> 
-        <div data-role="header">
-            <h1>Calificacion del Alumno</h1>
-        </div> 
-        <div data-role="content">
-            <form action="" method="POST">
-                <div data-role="fieldcontain">
-                    <label for="alumno">Alumno</label>
-                    <input type="text" id="alumnoCali" name="alumnoCali" value="Arkaitz Huerta" />
-                </div>
-
-                <div data-role="fieldcontain">
-                    <label for="contenido">Contenido del proyecto - 65%</label>
-                    <input type="text" id="contProy" name="contProy" value="7"/>
-                </div>
-
-                <div data-role="fieldcontain">
-                    <label for="calidad">CALIDAD DE PRESENTACION - 10%</label>
-                    <input type="text" id="CalPres" name="CalPres" value="5"/>
-                </div>
-
-                <div data-role="fieldcontain">
-                    <label for="expresion">EXPRESIÓN ORAL - 25%</label>
-                    <input type="text" id="ExpOral" name="ExpOral" value="5"/>
-                </div>
-                <a data-role="button" href="#home" data-icon="check">Confirmar</a>
-                <a data-role="button" href="#alumno" data-icon="check">Cancelar</a>
-            </form>
-        </div> 
-        <div data-role="footer">
-            <h1>Califica Proyectos Mobile</h1>
-        </div> 
-    </div>
 </body>  
 </html> 
